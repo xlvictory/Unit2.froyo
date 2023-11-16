@@ -1,6 +1,6 @@
 let flavors = prompt(
     "Please enter the froyo flavors desired, separated by a comma:",
-    "vanilla, vanilla, vanilla, strawberry, coffee, coffee"
+    "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
 );
 
 const stringArray = flavors.split(",");
@@ -26,9 +26,11 @@ for (let i = 0; i < stringArray.length; i++) {
         flavCount.strawberry += 1;
     } else if (str === "coffee") {
         flavCount.coffee += 1;
+    } else {
+        console.log("Sorry, We don't have that flavor!")
     }
 
 };
 console.log(flavCount);
 
-//console.table(flavCount);
+console.table(flavCount);
