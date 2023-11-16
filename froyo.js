@@ -29,12 +29,6 @@ for (let i = 0; i < stringArray.length; i++) {
     }
 
 };
-
 console.log(flavCount);
 
-/*function froyoCount(flavCount) {
-    const count = {};
-    for(key in flavCount){
-if(count[])
-    }
-}*/
+//console.table(flavCount);
